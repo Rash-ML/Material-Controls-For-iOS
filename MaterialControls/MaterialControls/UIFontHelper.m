@@ -47,4 +47,26 @@
   return [UIFontHelper robotoFontWithName:@"roboto-bold" size:fontSize];
 }
 
+//IRANSans font
++(nullable UIFont *)iranSansFontWithName:(nullable NSString *)fontName size:(CGFloat)fontSize {
+    
+    if (fontName == nil) {
+        font = [UIFont fontWithName:@"IRANSansMobile" size:fontSize];
+    } else {
+        font = [UIFont fontWithName:fontName size:fontSize];
+    }
+    
+    if (!font)
+        font = [UIFont systemFontOfSize:fontSize];
+    
+    return [font copy];
+    
+}
+
++ (nullable UIFont *)iranSansFontOfSize:(CGFloat)fontSize {
+    
+    return [UIFontHelper iranSansFontWithName:nil size:fontSize];
+    
+}
+
 @end

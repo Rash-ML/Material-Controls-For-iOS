@@ -42,4 +42,10 @@ typedef NS_OPTIONS(NSInteger, MDFontFamilyType) {
 + (nullable UIFont *)robotoFontWithName:(nullable NSString *)fontName size:(CGFloat)fontSize;
 + (nullable UIFont *)robotoFontOfSize:(CGFloat)fontSize;
 + (nullable UIFont *)boldRobotoFontOfSize:(CGFloat)fontSize;
+
+
+//iranSans Font
++(nullable UIFont *)iranSansFontWithName:(nullable NSString *)fontName size:(CGFloat)fontSize;
++ (nullable UIFont *)iranSansFontOfSize:(CGFloat)fontSize;
+
 @end
