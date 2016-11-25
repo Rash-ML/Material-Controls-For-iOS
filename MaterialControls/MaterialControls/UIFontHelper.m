@@ -50,6 +50,7 @@
 //IRANSans font
 +(nullable UIFont *)iranSansFontWithName:(nullable NSString *)fontName size:(CGFloat)fontSize {
     
+      UIFont *font;
     if (fontName == nil) {
         font = [UIFont fontWithName:@"IRANSansMobile" size:fontSize];
     } else {
